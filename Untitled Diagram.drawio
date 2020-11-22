@@ -1,26 +1,102 @@
-<mxfile host="app.diagrams.net" modified="2020-11-19T17:41:00.903Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="urrYlGyzwVtNYlOO8o-I" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-22T04:54:18.911Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="C-whT9BG4h5MZvd_dbYE" version="13.10.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="786" dy="513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="P0WerOg9DDHznc6b3bxv-1" value="" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="P0WerOg9DDHznc6b3bxv-1" value="order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="560" y="40" width="220" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="P0WerOg9DDHznc6b3bxv-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="P0WerOg9DDHznc6b3bxv-1">
+        <mxCell id="P0WerOg9DDHznc6b3bxv-2" value="+ Items : List&lt;ItemQuantity&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="P0WerOg9DDHznc6b3bxv-1" vertex="1">
           <mxGeometry y="26" width="220" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="P0WerOg9DDHznc6b3bxv-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="P0WerOg9DDHznc6b3bxv-1">
+        <mxCell id="P0WerOg9DDHznc6b3bxv-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="P0WerOg9DDHznc6b3bxv-1" vertex="1">
           <mxGeometry y="52" width="220" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="P0WerOg9DDHznc6b3bxv-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="P0WerOg9DDHznc6b3bxv-1">
+        <mxCell id="P0WerOg9DDHznc6b3bxv-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="P0WerOg9DDHznc6b3bxv-1" vertex="1">
           <mxGeometry y="60" width="220" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="P0WerOg9DDHznc6b3bxv-5" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Notes :&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Order Management System Functionality:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1. Can take orders from multiple sources.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2. orders consist of items vs number ordered list.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3. Admins can add and remove warehouses.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;4. warehouses contains set of items and their quantity.&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;4.5. System plans route for items in order and lays out how the package reaches customer.&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;5. System sends messages to warehouse to ship item id in trip.&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;6. transport gets a trip from location A to location B on a graph of locations that consist of warehouses, destinations and intermediate points.&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;7. System takes note of the status of the order and updates ui after every update from the trips.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="P0WerOg9DDHznc6b3bxv-5" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Notes :&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Order Management System Functionality:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1. Can take orders from multiple sources.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2. orders consist of items vs number ordered list.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3. Admins can add and remove warehouses.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;4. warehouses contains set of items and their quantity.&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;4.5. System plans route for items in order and lays out how the package reaches customer.&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;5. System sends messages to warehouse to ship item id in trip.&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;6. transport gets a trip from location A to location B on a graph of locations that consist of warehouses, destinations and intermediate points.&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;7. System takes note of the status of the order and updates ui after every update from the trips.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="20" y="30" width="230" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="P0WerOg9DDHznc6b3bxv-6" value="Entities:&lt;br&gt;1. Order.&lt;br&gt;2. Item.&lt;br&gt;3. WareHouse.&lt;br&gt;4. Transport.&lt;br&gt;5. Trucks.&lt;br&gt;5.5. Bikes&lt;br&gt;6. Destination.&lt;br&gt;7. Map.&lt;br&gt;8. Customer.&lt;br&gt;9. Admin.&lt;br&gt;10. TripOperator.&lt;br&gt;11. Trip." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="P0WerOg9DDHznc6b3bxv-6" value="Entities:&lt;br&gt;1. Order.&lt;br&gt;2. Item.&lt;br&gt;3. WareHouse.&lt;br&gt;4. Transport.&lt;br&gt;5. Trucks.&lt;br&gt;5.5. Bikes&lt;br&gt;6. Destination.&lt;br&gt;7. Map.&lt;br&gt;8. Customer.&lt;br&gt;9. Admin.&lt;br&gt;10. TripOperator.&lt;br&gt;11. Trip." style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="280" y="30" width="200" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-0" value="ItemQuantity" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="185" width="220" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-1" value="+ Item: Item&#xa;+ Quantity : Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-0">
+          <mxGeometry y="26" width="220" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-0">
+          <mxGeometry y="80" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-5" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="P0WerOg9DDHznc6b3bxv-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="560" y="230" as="sourcePoint" />
+            <mxPoint x="680" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-6" value="Item" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="580" y="350" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-7" value="+ Name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-6">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-8" value="+ Id: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-6">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-9" value="+ Description: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-6">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-10" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SZa_jYtGjnlF43Vkc16p-8">
+          <mxGeometry x="-0.0801" y="1" width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="490" as="sourcePoint" />
+            <mxPoint x="560" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="320" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-11" value="SpecificItem" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="340" y="450" width="140" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-12" value="+ Item: Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-11">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-13" value="+ Id: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-11">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-15" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SZa_jYtGjnlF43Vkc16p-8" target="SZa_jYtGjnlF43Vkc16p-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="500" y="500" as="sourcePoint" />
+            <mxPoint x="660" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-16" value="Warehouse" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="500" width="170" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-17" value="+ name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-16">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-18" value="+ id: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-16">
+          <mxGeometry y="52" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-19" value="+ Address: Adress&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-16">
+          <mxGeometry y="78" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-20" value="+ Items: List&lt;SpecificItem&gt;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SZa_jYtGjnlF43Vkc16p-16">
+          <mxGeometry y="104" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SZa_jYtGjnlF43Vkc16p-22" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=-0.007;exitY=0.808;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SZa_jYtGjnlF43Vkc16p-12" target="SZa_jYtGjnlF43Vkc16p-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="390" as="sourcePoint" />
+            <mxPoint x="430" y="390" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
