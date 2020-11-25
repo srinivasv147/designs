@@ -1,1 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2020-11-25T17:26:09.498Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" version="13.10.1" etag="B31sbcZMeOY8nT8y_ZPZ" type="github"><diagram id="uUCoGN6njyIA06r9qq4w">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-11-25T18:32:45.305Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="Zgt6gE9WEltftOvFwM9C" version="13.10.1" type="github">
+  <diagram id="uUCoGN6njyIA06r9qq4w" name="Page-1">
+    <mxGraphModel dx="786" dy="513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-3" value="&lt;h1&gt;Netflix Requirements (HLD)&lt;/h1&gt;&lt;p&gt;1. Functional requirements :&lt;/p&gt;&lt;p&gt;a. There is a dump of movies and thumbnails and a metadata about the movies.&lt;/p&gt;&lt;p&gt;b. user should be able to search on the metadata and click to watch the whole movie.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="760" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-4" value="client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-5" value="LoadBalancer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-6" value="webserver(static content)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-7" value="Applicationserver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-8" value="HDFS" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="700" y="210" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-9" value="Metadata store (mongo with replicas)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="710" y="360" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-10" value="CDN" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="190" y="410" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HW7XSAJwgcLFq5FGV8sw-11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="HW7XSAJwgcLFq5FGV8sw-4" target="HW7XSAJwgcLFq5FGV8sw-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="320" as="sourcePoint" />
+            <mxPoint x="430" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
